@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:preferences_app/multi_role_base_app/admin.dart';
+import 'package:preferences_app/multi_role_base_app/loading.dart';
+import 'package:preferences_app/multi_role_base_app/login.dart';
+import 'package:preferences_app/multi_role_base_app/student.dart';
+import 'package:preferences_app/multi_role_base_app/teacher.dart';
 import 'package:preferences_app/screens/loading.dart';
 
 void main() {
@@ -18,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoadingScreen(),
+      home: LmsLoadingScreen(),
     );
   }
 }
